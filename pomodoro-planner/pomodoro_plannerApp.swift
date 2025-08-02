@@ -1,17 +1,11 @@
-//
-//  pomodoro_plannerApp.swift
-//  pomodoro-planner
-//
-//  Created by jhna-macbook on 7/26/25.
-//
-
 import SwiftUI
 
 @main
 struct pomodoro_plannerApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainContentView()
         }
     }
 }
